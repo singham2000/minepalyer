@@ -2,7 +2,7 @@ const mineflayer = require("mineflayer");
 
 var settings = {
     username: "GOD",
-    host: "Singham2000.aternos.me",
+    host: "cybermaven.aternos.me",
 };
 
 const bot = mineflayer.createBot(settings);
