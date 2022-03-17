@@ -1,0 +1,14 @@
+{
+  "name": "minepalyer",
+  "version": "1.0.0",
+  "description": "minecraft player",
+  "main": "index.js",
+  "scripts": {
+    "test": "node bot.js"
+  },
+  "author": "surya",
+  "license": "ISC",
+  "dependencies": {
+    "mineflayer": "^4.1.0"
+  }
+}
