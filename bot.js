@@ -3,7 +3,7 @@ const mineflayer = require("mineflayer");
 var settings = {
     username: "GOD",
     host: "cybermaven.aternos.me",
-    port: process.env.PORT || 59242
+    port: 59242
 };
 
 const bot = mineflayer.createBot(settings);
