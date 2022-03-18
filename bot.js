@@ -3,15 +3,16 @@ const mineflayer = require("mineflayer");
 var settings = {
     username: "GOD",
     host: "cybermaven.aternos.me",
+    port: process.env.PORT || 59242
 };
 
 const bot = mineflayer.createBot(settings);
 
-bot.once("spawn", ()=>{
-    bot.chat("/give @a diamonds 50");
+bot.once("spawn", () => {
+    bot.chat("Spawn");
 });
 
-bot.on("move", ()=>{
+bot.on("move", () => {
     let friend = bot.nearestEntity();
 
     if (friend) {
@@ -21,7 +22,7 @@ bot.on("move", ()=>{
 
 var walking = false;
 
-bot.on("entityHurt", (entity)=>{
+bot.on("entityHurt", (entity) => {
     if (entity != bot.entity) return;
     walking = !walking;
     bot.setControlState("forward", walking);
